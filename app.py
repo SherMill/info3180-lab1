@@ -16,3 +16,7 @@ def page_not_found(error):
 @app.route('/')
 def home():
     return 'My homepage'
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
