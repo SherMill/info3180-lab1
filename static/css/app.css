@@ -2,27 +2,38 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   color: black;
+  line-height: 1.5;
   background-color: #FFC0CB;
   line-height: 1.5;
+  margin: 0;
+  padding: 0'
 }
 
 h1 {
   font-size: 24px;
   font-weight: bold;
+  color: #333;
 }
 
 p {
   font-size: 16px;
   margin-bottom: 20px;
+  color: #555;
 }
 
 img {
   border: 1px solid black;
   display: block;
-  margin: 0 auto; /* center the image */
+  margin: 20px auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: white; /*white background*/
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /*shadow*/
+  border-radius: 8px;
 }

@@ -3,12 +3,14 @@
 <head> 
     <meta charset="UTF-8"> 
     <title>My Website - About</title> 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"?v=1 /> <!--cache busting-->
 </head> 
 <body> 
-    <h1>Sheri-lee Mills</h1> 
-    <p>I am 21 years old and my hobbies include reading and tennis.</p> 
-    <p>I would like to work in the field of data science.</p>
-    <img src="{{ url_for('static', filename='non-copyrighted tennis photo.jpg') }}" alt="Example Image">
+    <div class = "container">
+        <h1>Sheri-lee Mills</h1> 
+        <p>I am 21 years old and my hobbies include reading and tennis.</p> 
+        <p>I would like to work in the field of data science.</p>
+        <img src="{{ url_for('static', filename='css/tennis.jpg') }}" alt="Tennis Hobby Image">
+    </div>
 </body> 
-</html>
+</html> 
